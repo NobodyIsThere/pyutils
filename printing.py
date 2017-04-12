@@ -48,8 +48,8 @@ class table:
         
         return string
         
-def print_json(obj):
-    print json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': '))
+def json(obj):
+    return json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': '))
 
 def progress_bar(value, max_value, width, fill_char='#', space_char='-'):
     """
